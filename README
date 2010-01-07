@@ -1,0 +1,18 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=2920
+
+This is a set of Vim plugins to simplify work with Mercury language compiler
+(http://www.mercury.csse.unimelb.edu.au)
+Native Mercury installer for Windows can be found here: 
+http://code.google.com/p/winmercury
+
+Filetype plugin is a modified version of ftplugin from officical Mercury distribution. Syntax plugin is a copy of official plugin
+
+mercury_commands plugin provides convenience commands for Mercury compiler:
+
+:Mmc [arg1]... - Invoke compiler (mmc), using current file when no arguments passed.
+:Mmake [arg1]... - Invoke mmake (mmake.bat on Windows).
+:Mmerr - Show last output from :Mmc or :Mmake.
+:Mmod name [interface_imports]
+:Mmod name {interfaceimports} [implementation_imports] - Insert module template, interface_imports and implementation_imports are comma-separated lists of modules.
+:Mmain name [interface_imports]
+:Mmain name {interfaceimports} [implementation_imports] - Insert module template containing the `main' predicate
